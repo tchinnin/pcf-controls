@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SampleNamespace" constructor="pcf01" version="1.4.1" display-name-key="pcf01" description-key="pcf01 description" control-type="standard" >
+    <property name="field" display-name-key="Freld" description-key="field description" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="entityname" display-name-key="Entity name" description-key="Entity name where to search for the text to display" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="keyfield" display-name-key="Key field" description-key="Field that contains the key to look for in the entity" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="keyvalue" display-name-key="Key value" description-key="Value of the Key to look for in the entity" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="valuefield" display-name-key="Value field" description-key="Field that contains the value to be displayed" of-type="SingleLine.Text" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+    <feature-usage>
+			<uses-feature name="Utility" required="true" />
+			<uses-feature name="WebAPI" required="true" />
+		</feature-usage>
+  </control>
+</manifest>
+ 
